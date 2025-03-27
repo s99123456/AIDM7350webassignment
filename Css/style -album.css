@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #1f242d;
+  color: #fff;
+}
+/* 头部区域 */
+.header {
+  width: 100%;
+  padding: 20px 10%;
+  background: #1f242d;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 25px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: default;
+}
+
+.navbar a {
+  display: inline-block;
+  font-size: 18px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 35px;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  color: #b7b2a9;
+}
+
+/* 内容展示区 */
+.divcss {
+  width: 800px;
+  border-left: #ccc dashed 2px;
+  border-right: #ccc dashed 2px;
+  border-radius: 20px;
+  box-shadow: 20px 0px 15px -13px #b7b2a9, -20px 0px 15px -13px #b7b2a9;
+  padding: 30px;
+  margin-top: 10px;
+  /* 多列布局 */
+  column-count: 3;
+  margin: 0 auto;
+}
+.divcss > h3 {
+  font-size: 30px;
+  font-weight: 800;
+  text-align: center;
+  /* 独占一行 */
+  column-span: all;
+  /* 字体 */
+  font-family: "Microsoft Yahei";
+  border-bottom: 2px dashed  #b7b2a9;
+  padding-bottom: 20px;
+  margin-bottom: 28px;
+}
+.divcss > img {
+  width: 100%;
+  background: #fff;
+  border-style: solid;
+  border-width: 1px;
+  padding: 2px;
+  transition: 1s linear all;
+}
+

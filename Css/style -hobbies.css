@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #1f242d;
+  color: #fff;
+}
+
+.header {
+  width: 100%;
+  padding: 20px 10%;
+  background: #1f242d;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+}
+
+.logo {
+  font-size: 25px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: default;
+}
+
+.navbar a {
+  display: inline-block;
+  font-size: 18px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 35px;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  color: #b7b2a9;
+}
+
+/* 轮播图 */
+.nav-images {
+  width: 1350.416px;
+  height: 758px;
+  margin: 0 auto;
+  margin-top: 20px;
+  /* position: relative; */
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+/* 内容区域 */
+.outer {
+  width: 1350.416px;
+  height: 800px;
+  /* border: 1px solid black; */
+  margin: 0 auto;
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+/* 内容区域导航栏 */
+.inner-left h2 {
+  font-size: 40px;
+  font-weight: 800;
+  color: goldenrod;
+}
+.inner-left span {
+  color: #fff;
+  font-size: 30px;
+}
+.outer ul {
+  height: 400px;
+  width: 300px;
+  /* border: 1px solid red; */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.outer ul li {
+  display: flex;
+  flex-direction: column;
+}
+/* 侧边导航栏a标签的样式 */
+.outer .inner-left ul li a {
+  font-size: 25px;
+  font-weight: 800;
+  color: #666;
+  text-decoration: none;
+  transition: 0.5s linear all;
+}
+.outer .inner-left ul li a:hover {
+ color: #eee8cc;
+}
+.outer ul li span {
+  color: #666;
+  cursor: pointer;
+}
+/* 内容展现区 */
+.inner-right {
+  width: 1040px;
+  height: 800px;
+  border: 1px solid #666;
+  overflow: hidden;
+}
+.inner-right #box1 {
+  /* height: 800px; */
+  width: 1040px;
+}
+.inner-right .content-top {
+  width: 1000px;
+  height: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  line-height: 40px;
+  margin: 0 auto;
+  padding-bottom: 46px;
+  border-bottom: 1px solid #666;
+  transition: 0.5s steps(360) all;
+}
+.inner-right .content-top:hover {
+  border-bottom: 5px solid #eee8cc;
+}
+.inner-right .content-top h2 {
+  font-size: 30px;
+  font-weight: 800;
+  color: goldenrod;
+}
+.inner-right .content-top span {
+  font-size: 20px;
+  font-weight: 800;
+  color: #fff;
+}
+.inner-right .content-top ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 800;
+}
+.inner-right .content-top li a {
+  color: #fff;
+}
+.inner-right .content-top li a:hover {
+  color: beige;
+}
+.inner-right .content-top li:last-child {
+  color: #eee8cc;
+}
+.inner-right .content-nav {
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+/* 第一部分内容 */
+.inner-right .content {
+  height: 200px;
+  width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 2px solid #666;
+}
+
+.inner-right .content img {
+  width: 300px;
+  height: 200px;
+  flex-shrink: 0;
+  object-fit: scale-down;
+  transition: 1s linear all;
+}
+.inner-right .content img:hover {
+  transform: scale(1.2);
+}
+.inner-right .content .en span {
+  font-size: 20px;
+  color:goldenrod;
+}
+.inner-right .content .contain {
+  width: 710px;
+  height: 200px;
+  position: relative;
+}
+.inner-right .content .en {
+  width: 678px;
+  height: 120px;
+  margin-left: 20px;
+  font-size: 15px;
+  line-height: 40px;
+  word-wrap: break-word;
+  word-break: break-all;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: normal;
+}
+.inner-right .content .mask {
+  height: 200px;
+  width: 710px;
+  background-color: #1f242d;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 16px;
+  opacity: 0;
+  transition: 1s linear all;
+}
+.inner-right .content:hover .en {
+  display: none;
+}
+.inner-right .content:hover .mask {
+  opacity: 1;
+  /* 变成小手，可要可不要 */
+  cursor: pointer;
+}
+
+/* .inner-right .content-one p {
+  vertical-align: middle;
+} */

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style -pro.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Personal website</title>
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="logo">Welcome to s99's world.</a>
+
+      <nav class="navbar">
+        <a href="home.html" class="active item">Home</a>
+        <a href="album.html" class="item">Album</a>
+        <a href="hobbies.html" class="item">Hobbies</a>
+        <a href="#" class="item">Portfolio</a>
+      </nav>
+      <style>
+       
+        li {
+            text-align: justify;
+        }
+
+        .hover-link {
+            position: relative;
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #37330f;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: transform 0.3s;
+        }
+
+        .hover-link::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.2);
+            z-index: -1;
+            transform: scale(0);
+            transition: transform 0.3s;
+            border-radius: 5px;
+        }
+
+        .hover-link:hover {
+            transform: translateY(-5px);
+        }
+
+        .hover-link:hover::before {
+            transform: scale(1);
+        }
+    </style>
+    </header>
+
+<br>
+    <!-- 视频内容区大盒子 -->
+    <div class="video">
+     <!-- 标题 -->
+     <a href="http://www.sun-ada.net/"  target="_blank" class="hover-link">Grand Competition: "Giving Every Cat the Right to Free Expression"</a>
+     <div class="content">
+       <!-- 内容区-视频播放区域 -->
+       <video width="600px" height="350px" controls>
+         <source src="赋予每个“喵”视觉表达的自由4k.mp4" type="" />
+       </video>
+       <!-- 内容区-文字介绍区 -->
+       <div class="content-txt">
+         <ul style="list-style: none;">
+          <li> <a href="微信图片_20231112202724.jpg" target="_blank" >National third prize</a></li>
+        <li style="font-size: 20px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This film takes advantage of the noble and elegant characteristics of the cat, personifies the cat and endows it with artistic creation techniques. With the help of the paintable APP, through simple and convenient operation, the cat can also become a creative master, so that the design is no longer a problem. It embodies the characteristics of free, free, convenient and zero threshold in the design of sketchable software.
+        </li>
+       </ul>
+     </div>
+   </div>
+
+   <br><br><br><br><br><br><br>
+    <!-- 视频内容区大盒子 -->
+    <div class="video">
+      <!-- 标题 -->
+      <a href="http://jsjds.blcu.edu.cn/"  target="_blank" class="hover-link">Computer Design Competition: Medical Science</a>
+      <div class="content">
+        <!-- 内容区-视频播放区域 -->
+        <video width="600px" height="350px" controls>
+          <source src="医钵.mp4" type="" />
+        </video>
+        <!-- 内容区-文字介绍区 -->
+        <div class="content-txt">
+          <ul style="list-style: none;">
+           <li> <a href="2023计算机国赛.pdf" target="_blank">National third prize</a></li>
+         <li style="font-size: 20px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;With time as the clue, the film tells the daily living, exercise, diet, study of the masters and apprentices in a linear narrative. Combined with the surrounding natural landscape, the characters are placed in a "spiritual" environment surrounded by green plants, animals and lakes. In such an environment, working at sunrise and resting at sunset is the embodiment of harmony between man and nature.
+         </li>
+        </ul>
+      </div>
+    </div>
+
+    <br><br><br><br><br><br><br>
+     <!-- 视频内容区大盒子 -->
+     <div class="video">
+      <!-- 标题 -->
+      <a href="http://jsjds.blcu.edu.cn/"  target="_blank" class="hover-link">Computer Design Competition: "The Book of Five Elements"</a>
+      <div class="content">
+        <!-- 内容区-视频播放区域 -->
+        <video width="600px" height="350px" controls>
+          <source src="《五行之书》.mp4" type="" />
+        </video>
+        <!-- 内容区-文字介绍区 -->
+        <div class="content-txt">
+          <ul style="list-style: none;">
+           <li> <a href="ZN202220279五行之书.jpg" target="_blank" >Provincial second prize</a></li>
+         <li style="font-size: 20px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Five Elements" is a systematic principle of ancient Chinese philosophy. This work chooses "five elements" as the core of culture, and creatively visualizes the art of calligraphy. By combining outstanding cultural elements , and relying on the movement characteristics of the characters, the author interprets different styles of calligraphy art to achieve the audience's  resonance of traditional philosophical thoughts
+          .
+         </li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+    <script src="./JS/script.js"></script>
+  </body>
+ </html>
+ 

@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #1f242d;
+  color: #fff;
+}
+
+.header {
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 10%;
+  background: #1f242d;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+}
+
+.logo {
+  font-size: 25px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: default;
+}
+
+.navbar a {
+  display: inline-block;
+  font-size: 18px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 35px;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  color: #b7b2a9;
+}
+
+.content,
+.video a {
+  width: 1200px;
+  margin: 0 auto;
+  /* 字体大小为继承样式 */
+  font-size: 24px;
+  font-family: "Microsoft YaHei";
+}
+.content {
+  height: 300px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+/* 顶部标题区start */
+.video a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color:goldenrod;
+  border-bottom: 1px solid transparent;
+  transition: 0.5s linear all;
+}
+.video a:hover {
+  border-bottom: 5px solid goldenrod;
+}
+/* 顶部标题区end */
+/* 内容区start */
+.video .content-txt {
+  font-family: "Poppins", sans-serif;
+  display: flex;  
+  list-style-type: none;
+  align-items: center;
+  width:620px;
+  height: 340px;
+  margin-left: 10px;
+  padding: 20px;
+  border-radius: 30px;
+  box-shadow: 12px 2px 16px -6px  #b7b2a9, 5px 12px 18px 1px  #b7b2a9;
+}
+ .content-txt li a{
+  display: block;
+  width:600px; 
+  padding: 20px;
+  text-align: center;
+  color: antiquewhite;
+  border-bottom: 1px solid transparent;
+  transition: 0.5s linear all;
+}
+.video .content-txt li a:hover {
+  border-bottom: 2px solid  #b7b2a9;}
